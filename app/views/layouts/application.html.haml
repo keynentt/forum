@@ -1,0 +1,19 @@
+!!!
+%html
+%head
+  %title Forum Website
+  = csrf_meta_tags
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+%body
+  %header
+  %nav
+    #logo
+      %p Forum Website
+
+  .wrapper
+    %p.notice= notice
+    %p.alert= alert
+
+  .wrapper
+    = yield

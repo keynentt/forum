@@ -38,6 +38,8 @@ gem 'bootstrap-sass'
 
 gem 'jquery-rails'
 
+gem 'bcrypt', platforms: :ruby
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
