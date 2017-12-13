@@ -40,7 +40,6 @@ body{
 
   .main_header {
  	width: 100%;
- 	
  	margin: 0 auto;
  	background: #005F97; 
  	#logo{
@@ -50,13 +49,14 @@ body{
  			font-weight: 700;
  			letter-spacing: -1px;
  			font-size: 1.2rem;
+ 			color:white;
  		}
  	}
  	#buttons{
  		float: right;
  		a {
  			line-height: 60px;
- 			background: #ecf0f1;
+ 			background: #E8F4FA;
  			padding: .3em .4em;
  			border-radius: .2em;
  			color: black;
@@ -69,6 +69,7 @@ body{
  #posts {
  	 background: #005F97;
  	 padding: 2em 5%;
+ 	 border-radius: .5em;
  	.post {
  		margin: 1em 0;
  		padding: 1em 0;
@@ -92,3 +93,21 @@ body{
  }
 
 
+#post_content {
+	background: #005F97;
+ 	padding: 2em 5%;
+ 	border-radius: .5em;
+ 	h1 {
+ 		font-weight: 100;
+ 		font-size: 1.5em;
+ 		color: white;
+ 		margin-top: 0;
+ 	}
+ 	p {
+ 		color: #ecf0f1;
+ 		font-size: 0.9rem;
+ 		font-weight: 100;
+ 		line-height: 1.5;
+ 		
+ 	}
+}
