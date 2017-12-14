@@ -1,4 +1,11 @@
-= simple_form_for @post do |f|
-	= f.input :title
-	= f.input :content
-	= f.submit
+.content
+	= simple_form_for @post do |f|
+		.h1
+			= f.label :Title
+			%br
+			= f.input :title
+	
+			= f.label :Content
+			= f.input :content
+			%br
+		= f.submit

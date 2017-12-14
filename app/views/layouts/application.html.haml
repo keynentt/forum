@@ -1,12 +1,14 @@
 !!!
 %html
 %head
-  %title Rails Forum
+  %title Key Forum
   = csrf_meta_tags
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
   %link{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Poppins:300,400,700", type: "text/css"}
   %link{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"}
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %link{ rel: "icon", href: "assets/fav/favicon-16x16.png", sizes: "16x16", type: "image/png" }
+  %link{rel: "manifest", href: "/manifest.json"}
 %body
   %header.main_header.clearfix
     .wrapper
@@ -14,11 +16,10 @@
         %p= link_to "Key Forum", root_path
       #buttons
         - if user_signed_in?
-          = link_to "New Post", new_post_path
+          = link_to "New Post", new_post_path, class: "button"
         - else
-          =link_to "Sign Up", new_user_registration_path
-          =link_to "Sign In", new_user_session_path
-
+          = link_to "Sign Up", new_user_registration_path, class: "button"
+          = link_to "Sign In", new_user_session_path, class: "button"
 
   .wrapper
     %p.notice= notice
@@ -26,3 +27,8 @@
 
   .wrapper
     = yield
+
+    .footer
+      %br/
+      %h4 &copy; 2018 Key T. Media
+      %br/

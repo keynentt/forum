@@ -1,0 +1,9 @@
+.comment.clearfix
+	.content
+		#post_content
+			%h1 Edit Comment
+
+			= simple_form_for([@post, @comment]) do |f|
+				= f.input :comment
+				%br/
+				= f.submit
